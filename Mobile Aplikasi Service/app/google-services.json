@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314345266433",
+    "project_id": "capstone-d912a",
+    "storage_bucket": "capstone-d912a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314345266433:android:0029a8775cf0de82be0f00",
+        "android_client_info": {
+          "package_name": "com.dicoding.picodiploma.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314345266433-8f0uh1jdgaop4ei3jrp8onst3liiufnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFk_wH7UaebGk7vwumlFRJpLKbsWXaD-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314345266433-8f0uh1jdgaop4ei3jrp8onst3liiufnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
