@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*bgheader*/
+.bgheader{
+    height: 625px;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/Untitled-2.jpg);
+}
+
+.navbar{
+    position: fixed; 
+    width: 100%;
+    margin: auto;
+    padding: 45px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+nav.black{
+    background: black;
+    padding: 25px 60px;
+    transition: 0.3s;
+} 
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar h2{
+    color: white;
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+.text-navbar{
+    width: 1000px;
+    color: white;
+    text-align: center;
+    padding: 240px 0px;
+    margin: 0px auto;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Bagian Hadir*/
+.container-mengapa{
+    background: white   ;
+    width: 100%;
+    padding: 35px 0px;
+}
+
+.title-mengapa h2{
+    color: black;
+    font-size: 40px;
+    width: 1130px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-mengapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.card-mengapa{
+    height: 490px;
+    width: 260px;
+    background: rgb(0, 88, 163);
+    border-radius: 20px;
+    margin: auto 25px;
+    position: static;
+    text-align: center;
+}
+
+.card-image-mengapa{
+    background-color: white;
+    height: 200px;
+    margin-bottom: 30px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-1-mengapa{
+    background-image: url(../img/why-1.png);
+}
+
+.img-2-mengapa{
+    background-image: url(../img/why-2.png);
+}
+
+.img-3-mengapa{
+    background-image: url(../img/why-3.png);
+}
+
+.img-4-mengapa{
+    background-image: url(../img/why-4.png);
+}
+
+.card-mengapa h5{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-mengapa p{
+    color: white;
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 25px;
+    padding: 10px 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Bagian Bergabung*/
+.container-gabung{
+    width: 100%;
+    padding: 30px 0;
+    background-color: rgb(16,21,36);
+}
+
+.box-gabung{
+    width: 90%;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.gabung-text h2{
+    color: white;
+    font-size: 45px;
+    margin: 10px auto;
+    padding: 120px 0px 25px 20px;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gabung-text p{
+    padding-left: 20px;
+}
+
+.box-gabung img{
+    width: 670px;
+    height: 450px;
+    padding-right: 30px;
+}
+
+.button1{
+    background-color: rgb(0, 88, 163);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button1:hover{
+    background-color: transparent;
+    border: 2px solid rgb(0, 88, 163);
+    cursor: pointer;
+}
+
+/*Bagian Sponsor*/
+.container-sponsor{
+    background: white;
+    width: 100%;
+    padding : 30px 80px;
+}
+
+.box-sponsor h2{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+.sponsor-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor img{
+    width: 250px;
+    margin: 15px 50px;
+}
+
+/*Bagian Produk*/
+.container-all{
+    background: rgb(0, 88, 163);
+    width: 100%;
+    padding: 65px 0px 45px 0px;
+}
+
+.title-all h2{
+    color: white;
+    font-size: 40px;
+    width: 1130px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-all{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    width: 1140px;
+}
+
+.card-all{
+    height: auto;
+    width: 250px;
+    background: white;
+    border-radius: 20px;
+    position: static;
+    margin:15px 10px;
+    border: 4px solid rgb(0, 88, 163);
+}
+
+.card-image-all{
+    background-color: black;
+    height: 70px;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.img-1-all{
+    background-image: url(../img/ac.jpg);
+}
+
+.img-2-all{
+    background-image: url(../img/refrigerator.jpg);
+}
+
+.img-3-all{
+    background-image: url(../img/laptop.jpg);
+}
+
+.img-4-all{
+    background-image: url(../img/computer.jpg);
+}
+
+.img-5-all{
+    background-image: url(../img/phone.jpg);
+}
+
+.text-all p{
+    color: black;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    padding: 0px 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-all{
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.container-all .button-all{
+    background-color: rgb(0, 88, 163);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 27px;
+    border-radius: 30px;
+    transition: .4s;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-all .button-all:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.box-button{
+    margin: 25px auto;
+}
+
+.lSPager{
+    display: none;
+}
+
+.lSAction > a{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lSAction > a::after{
+    position: absolute;
+    content: '';
+    margin: auto;
+    border: solid transparent;
+    border-width: 0px 4px 4px 0px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.lSAction > lSPrev::after{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.lSAction > lSNext::after{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+/*Bagian Blog*/
+.container-article{
+    width: 100%;
+    background-image: url(../img/bg-article.jpg);
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.title-article h2{
+    color: black;
+    font-size: 40px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 30px auto;
+    width: 1130px;
+}
+
+.card-article{
+    height: 230px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    position: static;
+    display: flex;
+    border: 2px solid black;
+}
+
+.card-article h5{
+    color: black;
+    font-size: 22px;
+    text-align: left;
+    padding-bottom: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pra-article{
+    padding: 60px 50px;
+}
+
+.pra-article p {
+    padding-top: 10px;
+    color: black;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Bagian Unduh*/
+.container-unduh{
+    width: 100%;
+    padding: 170px 40px;
+    justify-content: space-between;
+    height: 500px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-image: url(../img/bg-download.jpg);
+}
+
+.container-unduh h2{
+    font-size: 35px;
+    color: white;
+}
+
+.app{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.app li{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+.app li a{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    color: rgb(16,21,36);
+}
+
+.app li a:hover{
+    background: rgb(16,21,36);
+    color: white;
+}
+
+.app li a .fa-brands{
+    color: rgb(16,21,36);
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.app li a .fa-brands:hover{
+    color: white;
+}
+
+/*Bagian Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background:black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container-footer .sec{
+    margin-right: 30px;
+}
+
+footer .container-footer .sec.aboutus{
+    width: 40%;
+}
+
+footer .container-footer h2{
+    position: relative;
+    color: white;
+    font-weight: 500px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .container-footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sosmed{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sosmed li{
+    list-style: none;
+}
+
+.sosmed li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px ;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sosmed li a:hover{
+    background: #f00;
+}
+
+.sosmed li a .fa-brands{
+    color: #fff;
+    font-size: 20px;
+}
+
+.quicklinks{
+    position: relative;
+    width: 25%;
+}   
+
+.quicklinks ul li{
+    list-style: none;
+}
+
+.quicklinks ul li a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #fff;
+}
+
+.copyright{
+    width: 100%;
+    background: black;
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}

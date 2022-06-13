@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*bgheader*/
+.bgheader{
+    height: 625px;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(rgba(16,21,36,0.6),rgba(16,21,36,1.4)),url(../img/Untitled-1.jpg);
+}
+
+.navbar{
+    position: fixed; 
+    width: 100%;
+    margin: auto;
+    padding: 45px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+nav.black{
+    background: black;
+    padding: 25px 60px;
+    transition: 0.3s;
+} 
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar h2{
+    color: white;
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+.text-navbar{
+    color: white;
+    text-align: left;
+    object-position: center;
+    padding: 240px 0px;
+    margin: 0px 110px;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Bagian Jasa*/
+.container-jasa{
+    background: rgb(16,21,36);
+    width: 100%;
+    padding: 45px 0px;
+}
+
+.container-jasa-2{
+    background: rgb(16,21,36);
+    width: 100%;
+    padding: 5px 0px 45px 0px;
+}
+
+.title h2{
+    color: white;
+    font-size: 40px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    width: 1130px;
+}
+
+.card{
+    height: auto;
+    width: 250px;
+    background: rgb(0, 88, 163);
+    border-radius: 20px;
+    position: static;
+    margin:0 15px;
+}
+
+.card-image{
+    background-color: black;
+    height: 70px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.img-1{
+    background-image: url(../img/ac.jpg);
+}
+
+.img-2{
+    background-image: url(../img/refrigerator.jpg);
+}
+
+.img-3{
+    background-image: url(../img/laptop.jpg);
+}
+
+.img-4{
+    background-image: url(../img/computer.jpg);
+}
+
+.img-5{
+    background-image: url(../img/phone.jpg);
+}
+
+.pra p{
+    color: white;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button1{
+    background-color: rgb(0, 88, 163);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card .button1{
+    background-color: white;
+    color: rgb(0, 88, 163);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 25px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .button1:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+/*Bagian Alasan*/
+.container-alasan{
+    width: 100%;
+    background-color: white;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.title-alasan h2{
+    color: rgb(0, 88, 163);
+    font-size: 40px;
+    width: 1130px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-alasan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 90%;
+    margin: auto;
+}
+
+.card-alasan{
+    height: 500px;
+    width: 260px;
+    background: rgb(0, 88, 163);
+    border-radius: 30px;
+    margin: 8px;
+    position: static;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image-alasan{
+    background-color: white;
+    height: 200px;
+    margin-bottom: 30px;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.img-1-alasan{
+    background-image: url(../img/prof-1.jpg);
+}
+
+.img-2-alasan{
+    background-image: url(../img/prof-6.jpg);
+}
+
+.img-3-alasan{
+    background-image: url(../img/prof-5.jpg);
+}
+
+.img-4-alasan{
+    background-image: url(../img/prof-3.jpg);
+}
+
+.img-5-alasan{
+    background-image: url(../img/prof-2.jpg);
+}
+
+.img-6-alasan{
+    background-image: url(../img/prof-4.jpg);
+}
+
+.card-alasan h5{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pra-alasan p{
+    color: white;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 25px;
+    padding: 10px 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lSPager{
+    display: none;
+}
+
+.lSAction > a{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lSAction > a::after{
+    position: absolute;
+    content: '';
+    margin: auto;
+    border: solid transparent;
+    border-width: 0px 4px 4px 0px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.lSAction > lSPrev::after{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.lSAction > lSNext::after{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+/*Bagian Bergabung*/
+.container-gabung{
+    width: 100%;
+    padding: 30px 0;
+    background-color: rgb(16,21,36);
+}
+
+.box-gabung{
+    width: 90%;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.gabung-text h2{
+    color: white;
+    font-size: 45px;
+    margin: 10px auto;
+    padding: 120px 0px 25px 20px;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gabung-text p{
+    padding-left: 20px;
+}
+
+.box-gabung img{
+    width: 670px;
+    height: 450px;
+    padding-right: 30px;
+}
+
+.button1{
+    background-color: rgb(0, 88, 163);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button1:hover{
+    background-color: transparent;
+    border: 2px solid rgb(0, 88, 163);
+    cursor: pointer;
+}
+
+/*Bagian Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background:black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container-footer .sec{
+    margin-right: 30px;
+}
+
+footer .container-footer .sec.aboutus{
+    width: 40%;
+}
+
+footer .container-footer h2{
+    position: relative;
+    color: white;
+    font-weight: 500px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .container-footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 75px;
+    height: 2px;
+    background: white;
+}
+
+footer p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sosmed{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sosmed li{
+    list-style: none;
+}
+
+.sosmed li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px ;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sosmed li a:hover{
+    background: #f00;
+}
+
+.sosmed li a .fa-brands{
+    color: #fff;
+    font-size: 20px;
+}
+
+.quicklinks{
+    position: relative;
+    width: 25%;
+}   
+
+.quicklinks ul li{
+    list-style: none;
+}
+
+.quicklinks ul li a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #fff;
+}
+
+.copyright{
+    width: 100%;
+    background: black;
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}

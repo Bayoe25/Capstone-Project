@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aplikasi yang Menyediakan Layanan Service Online | LESSON</title>
+        <link rel="stylesheet" href="css/mitra.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!----------------------------------------JS---------------------------------------------------->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/e73742050b.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!--For Navbar Scroll-->
+        <script type="text/javascript">
+            $(window).on("scroll", function(){
+                if($(window).scrollTop()){
+                    $('nav').addClass('black');
+                }
+                else{
+                    $('nav').removeClass('black');
+                }
+            })
+        </script>
+
+        <!--Slider Image-->
+        <script>
+            $(document).ready(function() {
+                $('#autoWidth').lightSlider({
+                    autoWidth:true,
+                    loop:false,
+                onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+                    } 
+                });  
+            });
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div class="bgheader">
+            <!--Navigas-->
+                <nav class="navbar" id="navbarr">
+                    <h2>ServOn</h2>
+                    <ul id="list">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="">Mitra</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="bantuan.html">Bantuan</a></li>
+                    </ul>
+                </nav>
+                <div class="text-navbar">
+                    <h3>Menjadi pahlawan dalam <br>
+                        membantu masyarakat <br>
+                        dalam masalah service </h3>
+                </div>
+            </div>
+        </header>
+
+        <!-------------------------------------------------Jasa--------------------------------------------------------->
+        <div class="container-jasa">
+            <div class="title">
+                <h2>Pilih Jasa Anda</h2>                
+            </div>
+            <div class="box">
+                <div class="card">
+                    <div class="card-image img-1"></div>
+                    <div class="pra">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, </p>
+
+                        <p style="text-align: center;">
+                            <a href="#" class="button1">Selengkapnya</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image img-2"></div>
+                    <div class="pra">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, </p>
+
+                        <p style="text-align: center;">
+                            <a href="#" class="button1">Selengkapnya</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image img-3"></div>
+                    <div class="pra">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, </p>
+
+                        <p style="text-align: center;">
+                            <a href="#" class="button1">Selengkapnya</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image img-4"></div>
+                    <div class="pra">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, </p>
+
+                        <p style="text-align: center;">
+                            <a href="#" class="button1">Selengkapnya</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------Box 2-------------------------->
+            <div class="container-jasa-2">
+            <div class="box">
+                <div class="card">
+                    <div class="card-image img-5"></div>
+                    <div class="pra">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, </p>
+
+                        <p style="text-align: center;">
+                            <a href="#" class="button1">Selengkapnya</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------Alasan Mitra------------------------------------------------------>
+         <div class="container-alasan">
+            <div class="title-alasan">
+                <h2>Keuntungan menjadi mitra kami?</h2> 
+            </div>
+            <div class="box-alasan">
+                <ul id="autoWidth" class="cs-hidden">
+                    <!--1-->
+                    <li class="item-a">
+                        <div class="card-alasan">
+                            <div class="card-image-alasan img-1-alasan"></div>
+                            <h5>Mitra mendapat<br>asuransi kesehatan</h5>
+                            <div class="pra-alasan">
+                                <p>Untuk mitra teknisi, kami memberikan bantuan asuransi kesehatan untuk
+                                    mendapat perlindungan dengan premi terjangkau.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--2-->
+                    <li class="item-a">
+                        <div class="card-alasan">
+                            <div class="card-image-alasan img-2-alasan"></div>
+                            <h5>Pendaftaran <br>Gratis</h5>
+                            <div class="pra-alasan">
+                                <p>Mulai pengalaman kerja kalian dengan kami tanpa biaya pendaftaran.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--3-->
+                    <li class="item-a">
+                        <div class="card-alasan">
+                            <div class="card-image-alasan img-3-alasan"></div>
+                            <h5>Penghasilan dapat diatur <br>dan mudah dicairin</h5>
+                            <div class="pra-alasan">
+                                <p>Penghasilan mitra dapat diatur oleh mitra tanpa campur tangan dari kami
+                                    serta penghasilan mudah dicairin tanpa waktu yang lama.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--4-->
+                    <li class="item-a">
+                        <div class="card-alasan">
+                            <div class="card-image-alasan img-4-alasan"></div>
+                            <h5>Pelatihan bagi yang <br>belum memiliki sertifikasi</h5>
+                            <div class="pra-alasan">
+                                <p>Bagi yang ingin bergabung dengan mitra kami dan tidak memiliki sertifikasi 
+                                    untuk sebuah bidang jasa, kami menyediakan tempat pelatihan untuk memberikan
+                                    kesempatan kepada masyarakat yang ingin menjadi mitra kami.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--5-->
+                    <li class="item-a">
+                        <div class="card-alasan">
+                            <div class="card-image-alasan img-5-alasan"></div>
+                            <h5>Tawaran Khusus <br>buat Teknisi</h5>
+                            <div class="pra-alasan">
+                                <p> Mitra akan diberikan tawaran dan penghematan untuk perawatan kendaraan, 
+                                    bahan bakar serta alat yang digunakan dalam sebuah layanan. Serta penambahan 
+                                    penghasilan per layanan.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--6-->
+                    <li class="item-a">
+                        <div class="card-alasan">
+                            <div class="card-image-alasan img-6-alasan"></div>
+                            <h5>Dukungan Mitra<br> Terpercaya</h5>
+                            <div class="pra-alasan">
+                                <p>Kami menyediakan bidang manager yang dapat membantu mitra kami untuk 
+                                    membantu menyelesaikan masalah yang dihadapi mitra kami. </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+         </div>
+
+         <!---------------------------------------------Bergabung------------------------------------------------------>
+         <div class="container-gabung">
+            <div class="box-gabung">
+                <img src="img/join.png" alt="Foto">
+                <div class="gabung-text">
+                    <h2>Mari bergabung <br>jadi mitra kami</h2>
+                    <p>
+                        <a href="#" class="button1">Selengkapnya</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-----------------------------------------------------Footer------------------------------------------------------->
+    <footer>
+        <div class="container-footer">
+            <div class="sec aboutus">
+                <h2>ServOn</h2>
+                    <p>Startup yang bergerak di bidang industri penyedia jasa service yang
+                        menyambungkan antar penyedia jasa service dengan yang membutuhkan jasa service.
+                    </p>
+                <ul class="sosmed">
+                    <li><a href="index.html"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="index.html"><i class="fa-brands fa-facebook"></i></a></i></li>
+                    <li><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></i></li>
+                    <li><a href="index.html"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">FAQ</a></li>
+                    <li><a href="index.html">Privacy Policy</a></li>
+                    <li><a href="index.html">Help</a></li>
+                    <li><a href="index.html">Terms & Consitions</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span>0817 7045 0830</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <span>support@lesson.com</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-map-location-dot"></i></span>
+                        <span>Jln.Bulu Dua D.27, Kota Makassar, 90145</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>&#169; 2022 ServOn. All Rights Reserved</p>
+    </div>
+</html>

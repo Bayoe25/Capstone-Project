@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aplikasi yang Menyediakan Layanan Service Online | LESSON</title>
+        <link rel="stylesheet" href="css/bantuan.css">
+
+        <script src ="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://kit.fontawesome.com/e73742050b.js" crossorigin="anonymous"></script>
+
+        <!--For Navbar Scroll-->
+        <script type="text/javascript">
+            $(window).on("scroll", function(){
+                if($(window).scrollTop()){
+                    $('nav').addClass('black');
+                }
+                else{
+                    $('nav').removeClass('black');
+                }
+            })
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div class="bgheader">
+            <!--Navigas-->
+                <nav class="navbar" id="navbarr">
+                    <h2>ServOn</h2>
+                    <ul id="list">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="mitra.html">Mitra</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="">Bantuan</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container-search">
+            <div class="title-search">
+                <img src="./img/search.jpg" alt="search">      
+                <h2>Butuh Bantuan ?</h2> 
+                <div class="search">
+                    <input type="text" placeholder="Search" class="loop">
+                    <ul>
+                        <li><a href="bantuan.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    </ul>
+                </div>         
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="container-footer">
+            <div class="sec aboutus">
+                <h2>ServOn</h2>
+                <p>Startup yang bergerak di bidang industri penyedia jasa service yang
+                    menyambungkan antar penyedia jasa service dengan yang membutuhkan jasa service.
+                </p>
+                <ul class="sosmed">
+                    <li><a href="index.html"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="index.html"><i class="fa-brands fa-facebook"></i></a></i></li>
+                    <li><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></i></li>
+                    <li><a href="index.html"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">FAQ</a></li>
+                    <li><a href="index.html">Privacy Policy</a></li>
+                    <li><a href="index.html">Help</a></li>
+                    <li><a href="index.html">Terms & Consitions</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span>0817 7045 0830</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <span>support@lesson.com</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-map-location-dot"></i></span>
+                        <span>Jln.Bulu Dua D.27, Kota Makassar, 90145</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>&#169; 2022 ServOn. All Rights Reserved</p>
+    </div>
+</html>

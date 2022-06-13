@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*bgheader*/
+.bgheader{
+    height: 525px;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(rgba(16,21,36,0.6),rgba(16,21,36,1.4)),url(../img/Untitled-4.jpg);
+    background-position: top;
+}
+
+.navbar{
+    position: fixed; 
+    width: 100%;
+    margin: auto;
+    padding: 45px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+nav.black{
+    background: black;
+    padding: 25px 60px;
+    transition: 0.3s;
+} 
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar h2{
+    color: white;
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+.text-navbar {
+    width: 500px;
+    color: white;
+    text-align: left;
+    object-position: center;
+    padding: 300px 0px;
+    margin: 0px 110px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-navbar h3{
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.text-navbar p{
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+/*Bagian Misi*/
+.container-vm{
+    background-image: url(../img/bg-tentang.jpg);
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.title-visi h2{
+    color: white;
+    font-size: 40px;
+    width: 1130px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-visi p{
+    color: white;
+    width: 900px;
+    font-size: 18px;
+    padding: 70px 90px;
+    margin: 30px auto;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title-misi h2{
+    color: black;
+    font-size: 40px;
+    width: 1130px;
+    margin: 140px auto 10px auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-misi p{
+    width: 900px;
+    font-size: 20px;
+    padding: 80px 100px;
+    margin: 30px auto;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 16px 16px 15px 10px black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box-misi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+.card-misi{
+    height: 470px;
+    width: 260px;
+    border-radius: 20px;
+    margin: auto 30px;
+    position: static;
+    text-align: center;
+}
+
+.misi-1{ 
+    background: rgb(125, 151, 244);
+    box-shadow: 3px 3px 15px 2px rgb(125, 151, 244);
+}
+
+.misi-2{
+    background: rgb(77,174,157);
+    box-shadow: 3px 3px 15px 2px rgb(77,174,157);
+}
+
+.misi-3{
+    background: rgb(252, 236, 220);
+    box-shadow: 3px 3px 15px 2px rgb(252, 236, 220);
+}
+
+.card-image-misi{
+    background-color: black;
+    height: 210px;
+    margin-bottom: 20px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-1-misi{
+    background-image: url(../img/misi-1.jpg);
+}
+
+.img-2-misi{
+    background-image: url(../img/misi-2.jpg);
+}
+
+.img-3-misi{
+    background-image: url(../img/misi-3.jpg);
+}
+
+.card-misi h5{
+    color: black;
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pra-misi p{
+    color: black;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Bagian Tim*/
+.container-tim{
+    background: rgb(16, 21, 36);
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.title-tim h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-tim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.card-tim{
+    height: 380px;
+    width: 250px;
+    background: white;
+    border-radius: 30px;
+    margin: 10px 25px;
+    position: static;
+    text-align: center;
+}
+
+.card-photo{
+    background-color: black;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.photo-1{
+    background-image: url(../img/Kenwi.jpg);
+    background-position:center;
+}
+
+.photo-2{
+    background-image: url(../img/Bayu.jpg);
+    background-position:top;
+}
+
+.pht p{
+    color: black;
+    font-size: 16px;
+    line-height: 17px;
+    padding: 10px 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card-tim h5{
+    color: black;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sosmed-tim{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sosmed-tim li{
+    list-style: none;
+}
+
+.sosmed-tim li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sosmed-tim li a:hover{
+    background: blue;
+}
+
+.sosmed-tim li a .fa-brands{
+    color: #fff;
+    font-size: 20px;
+}
+
+/*Bagian Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background:black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container-footer .sec{
+    margin-right: 30px;
+}
+
+footer .container-footer .sec.aboutus{
+    width: 40%;
+}
+
+footer .container-footer h2{
+    position: relative;
+    color: white;
+    font-weight: 500px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .container-footer h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sosmed{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sosmed li{
+    list-style: none;
+}
+
+.sosmed li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px ;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sosmed li a:hover{
+    background: #f00;
+}
+
+.sosmed li a .fa-brands{
+    color: #fff;
+    font-size: 20px;
+}
+
+.quicklinks{
+    position: relative;
+    width: 25%;
+}   
+
+.quicklinks ul li{
+    list-style: none;
+}
+
+.quicklinks ul li a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #fff;
+}
+
+.copyright{
+    width: 100%;
+    background: black;
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aplikasi yang Menyediakan Layanan Service Online | LESSON</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-----------------------------------------JS---------------------------------------->
+        <script src="https://kit.fontawesome.com/e73742050b.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!--For Navbar Scroll-->
+        <script type="text/javascript">
+            $(window).on("scroll", function(){
+                if($(window).scrollTop()){
+                    $('nav').addClass('black');
+                }
+                else{
+                    $('nav').removeClass('black');
+                }
+            })
+        </script>
+        <!--Slider Image-->
+        <script>
+            $(document).ready(function() {
+                $('#autoWidth').lightSlider({
+                    autoWidth:true,
+                    loop:false,
+                onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+                    } 
+                });  
+            });
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <div class="bgheader">
+            <!--Navigas-->
+                <nav class="navbar" id="navbarr">
+                    <h2>ServOn</h2>
+                    <ul id="list">
+                        <li><a href="">Beranda</a></li>
+                        <li><a href="mitra.html">Mitra</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="bantuan.html">Bantuan</a></li>
+                    </ul>
+                </nav>
+                <div class="text-navbar">
+                    <h3>Aplikasi yang menghubungkan teknisi dengan masyarakat yang membutuhkan jasa service</h3>
+                </div>
+            </div>
+        </header>
+        <!------------------------------------------Mengapa----------------------------------------------------------->
+        <div class="container-mengapa">
+            <div class="title-mengapa">
+                <h2>Mengapa harus memilih kami ?</h2>                
+            </div>
+            <div class="box-mengapa">
+                <div class="card-mengapa">
+                    <div class="card-image-mengapa img-1-mengapa"></div>
+                    <h5>Layanan yang <br>dapat di percaya</h5>
+                    <div class="text-mengapa">
+                        <p>Teknisi yang kami berikan memiliki sertifikasi keahlian agar 
+                            dapat memberikan hasil yang maksimal saat melakukan services 
+                            pada barang-barang anda.</p>
+                    </div>
+                </div>
+
+                <div class="card-mengapa">
+                    <div class="card-image-mengapa img-2-mengapa"></div>
+                    <h5>Harga sesuai <br>dompet</h5>
+                    <div class="text-mengapa">
+                        <p>Untuk mempermudah menentukan harga yang sesuai dengan teknisi dan customer kami 
+                            menyediakan fitur konsultasi dulu baru pesan. Agar harga yang diberikan 
+                            oleh penyedia jasa sesuai dengan budget customer.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card-mengapa">
+                    <div class="card-image-mengapa img-3-mengapa"></div>
+                    <h5>Aplikasi Mudah <br>dimengerti</h5>
+                    <div class="text-mengapa">
+                        <p>Kami menyediakan aplikasi mobile untuk membantu masyarakat dalam
+                            melakukan pemesanan jasa service dimana saja dan aplikasi kami dirancang agar masyarakat 
+                            mudah mengerti.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-mengapa">
+                    <div class="card-image-mengapa img-4-mengapa"></div>
+                    <h5>Beragam Jenis <br>Teknisi</h5>
+                    <div class="text-mengapa">
+                        <p>Kami menyediakan beragam jenis teknisi agar dapat membantu segala 
+                            jenis keluhan yang terjadi di masyarakat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------------Bergabung------------------------------------------------------>
+        <div class="container-gabung">
+            <div class="box-gabung">
+                <img src="img/join.png" alt="Foto">
+                <div class="gabung-text">
+                    <h2>Mari bergabung <br>jadi mitra kami</h2>
+                    <p>
+                        <a href="mitra.html" class="button1">Selengkapnya</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------Sponsor---------------------------------------------------->
+        <div class="container-sponsor">
+            <div class="box-sponsor">
+                <h2>Didukung Oleh</h2>
+            </div>
+            <div class="sponsor-img">
+                <div class="sponsor"><img src="img/Google.png" alt=""></div>
+                <div class="sponsor"><img src="img/bangkit.png" alt=""></div>
+                <div class="sponsor"><img src="img/kampus.png" alt=""></div>
+            </div>
+        </div>  
+
+        <!-------------------------------------------All Service------------------------------------------------------->
+        <div class="container-all">
+            <div class="title-all">
+                <h2>Layanan yang kami <br> sediakan untuk membantu Anda</h2>
+            </div>
+            <div class="box-all">
+                <ul id="autoWidth" class="cS-hidden">
+                    <!--1-->
+                    <li class="item-a">
+                        <div class="card-all">
+                            <div class="card-image-all img-1-all"></div>
+                            <div class="text-all">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--2-->
+                    <li class="item-a">
+                        <div class="card-all">
+                            <div class="card-image-all img-2-all"></div>
+                            <div class="text-all">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--3-->
+                    <li class="item-a">
+                        <div class="card-all">
+                            <div class="card-image-all img-3-all"></div>
+                            <div class="text-all">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--4-->
+                    <li class="item-a">
+                        <div class="card-all">
+                            <div class="card-image-all img-4-all"></div>
+                            <div class="text-all">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--5-->
+                    <li class="item-a">
+                        <div class="card-all">
+                            <div class="card-image-all img-5-all"></div>
+                            <div class="text-all">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-button">
+                <p style="text-align: center;">
+                    <a href="produk.html" class="button-all">Selengkapnya</a>
+                </p>
+            </div>
+        </div>
+
+        <!-------------------------------------------------Article------------------------------------------------------->
+        <div class="container-article">
+            <div class="title-article">
+                <h2>Artikel</h2> 
+            </div>
+            <div class="box-article">
+                <div class="card-article">
+                    <div class="pra-article">
+                        <h5>Artikel saat ini belum tersedia</h5>
+                        <hr>
+                        <p>Nantikan artikel terbaru kami dan jangan lupa pantau terus 
+                            social media kami untuk mendapat informasi-informasi terbaru
+                            di @servin.id sehingga anda tetap update tentang kami.   
+                        </p>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <!--------------------------------------------Unduh----------------------------------------------------------->
+        <div class="container-unduh">
+            <h2>Butuh Service Online Berkualitas dan Terpercaya ? <br> Lesson Solusinya.</h2>
+            <ul class="app">
+                <li><a href="index.html"><i class="fa-brands fa-apple"></i>App Store</a></li>
+                <li><a href="index.html"><i class="fa-brands fa-android"></i>Play Store</a></li>
+            </ul>    
+        </div>
+    </body>
+
+        <!--------------------------------------------Footer------------------------------------------->
+        <footer>
+            <div class="container-footer">
+                <div class="sec aboutus">
+                    <h2>ServOn</h2>
+                    <p>Startup yang bergerak di bidang industri penyedia jasa service yang
+                        menyambungkan antar penyedia jasa service dengan yang membutuhkan jasa service.
+                    </p>
+                    <ul class="sosmed">
+                        <li><a href="index.html"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="index.html"><i class="fa-brands fa-facebook"></i></a></i></li>
+                        <li><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></i></li>
+                        <li><a href="index.html"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+    
+                <div class="sec quicklinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">FAQ</a></li>
+                        <li><a href="index.html">Privacy Policy</a></li>
+                        <li><a href="index.html">Help</a></li>
+                        <li><a href="index.html">Terms & Consitions</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="sec contact">
+                    <h2>Contact Us</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <span>0817 7045 0830</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <span>support@lesson.com</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-map-location-dot"></i></span>
+                            <span>Jln.Bulu Dua D.27, Kota Makassar, 90145</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>&#169; 2022 ServOn. All Rights Reserved</p>
+        </div>
+</html>
